@@ -3,7 +3,7 @@ require 'test_helper'
 module Api
   class BusesControllerTest < ActionDispatch::IntegrationTest
     setup do
-      Bus.create!(bus_id: 'A1', bus_nm: '37번')
+      @bus = Bus.create!(bus_id: 'A1', bus_nm: '37번')
     end
 
     test 'GET #index' do
@@ -11,6 +11,18 @@ module Api
       assert_response :success
       assert_includes response.body, 'A1'
       assert_not_includes response.body, '99번'
+    end
+
+    test 'GET #show' do
+      get api_bus_url(@bus.id), params: { format: :json }
+      assert_response :success
+      assert_includes response.body, 'A1'
+      assert_includes response.body, '37번'
+    end
+
+    test 'GET #show (404)' do
+      get api_bus_url('NOT-FOUND'), params: { format: :json }
+      assert_response :not_found
     end
   end
 end
