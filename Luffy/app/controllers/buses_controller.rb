@@ -1,5 +1,6 @@
 class BusesController < ApplicationController
   before_action :set_bus, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :json
 
   # GET /buses
   # GET /buses.json
@@ -25,50 +26,34 @@ class BusesController < ApplicationController
   # POST /buses.json
   def create
     @bus = Bus.new(bus_params)
-
-    respond_to do |format|
-      if @bus.save
-        format.html { redirect_to @bus, notice: 'Bus was successfully created.' }
-        format.json { render :show, status: :created, location: @bus }
-      else
-        format.html { render :new }
-        format.json { render json: @bus.errors, status: :unprocessable_entity }
-      end
-    end
+    @bus.save
+    respond_with(@bus)
   end
 
   # PATCH/PUT /buses/1
   # PATCH/PUT /buses/1.json
   def update
-    respond_to do |format|
-      if @bus.update(bus_params)
-        format.html { redirect_to @bus, notice: 'Bus was successfully updated.' }
-        format.json { render :show, status: :ok, location: @bus }
-      else
-        format.html { render :edit }
-        format.json { render json: @bus.errors, status: :unprocessable_entity }
-      end
-    end
+    @bus.update(bus_params)
+    respond_with(@bus)
   end
 
   # DELETE /buses/1
   # DELETE /buses/1.json
   def destroy
     @bus.destroy
-    respond_to do |format|
-      format.html { redirect_to buses_url, notice: 'Bus was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    respond_with(@bus)
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_bus
-      @bus = Bus.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def bus_params
-      params.require(:bus).permit(:bus_id, :bus_nm)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_bus
+    @bus = Bus.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet,
+  # only allow the white list through.
+  def bus_params
+    params.require(:bus).permit(:bus_id, :bus_nm)
+  end
 end

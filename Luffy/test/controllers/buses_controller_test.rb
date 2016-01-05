@@ -5,40 +5,42 @@ class BusesControllerTest < ActionDispatch::IntegrationTest
     @bus = buses(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get buses_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_bus_url
     assert_response :success
   end
 
-  test "should create bus" do
+  test 'should create bus' do
     assert_difference('Bus.count') do
-      post buses_url, params: { bus: { bus_id: @bus.bus_id, bus_nm: @bus.bus_nm } }
+      post buses_url, params:
+        { bus: { bus_id: @bus.bus_id, bus_nm: @bus.bus_nm } }
     end
 
     assert_redirected_to bus_path(Bus.last)
   end
 
-  test "should show bus" do
+  test 'should show bus' do
     get bus_url(@bus)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_bus_url(@bus)
     assert_response :success
   end
 
-  test "should update bus" do
-    patch bus_url(@bus), params: { bus: { bus_id: @bus.bus_id, bus_nm: @bus.bus_nm } }
+  test 'should update bus' do
+    patch bus_url(@bus), params:
+      { bus: { bus_id: @bus.bus_id, bus_nm: @bus.bus_nm } }
     assert_redirected_to bus_path(@bus)
   end
 
-  test "should destroy bus" do
+  test 'should destroy bus' do
     assert_difference('Bus.count', -1) do
       delete bus_url(@bus)
     end
