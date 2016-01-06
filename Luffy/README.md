@@ -56,4 +56,16 @@
 
 ***
 
+## 이미지(Img) API 명세
+
+#### 이미지 목록(Index) API 명세
+
+- http://luffy.dev/api/imgs.json
+
+#### 이미지 상세(Show) API 명세
+
+- http://luffy.dev/api/imgs/{id}.json
+- http://luffy.dev/api/imgs/NOT-FOUND.json
+
+***
 
