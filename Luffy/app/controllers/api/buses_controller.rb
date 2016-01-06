@@ -14,6 +14,8 @@ module Api
       respond_with(@bus)
     end
 
+    private
+
     def not_found
       head status: :not_found
     end

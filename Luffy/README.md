@@ -10,11 +10,11 @@
 
 ## 버스(Bus) API 명세
 
-### 버스 목록(Index) API 명세
+#### 버스 목록(Index) API 명세
 
 - http://luffy.dev/api/buses.json
 
-### 버스 상세(Show) API 명세
+#### 버스 상세(Show) API 명세
 
 - http://luffy.dev/api/buses/{id}.json
 - http://luffy.dev/api/buses/NOT-FOUND.json
@@ -23,13 +23,28 @@
 
 ## 버스 정류장(BusStop) API 명세
 
-### 버스 정류장 목록(Index) API 명세
+#### 버스 정류장 목록(Index) API 명세
 
 - http://luffy.dev/api/bus_stops.json
 
-### 버스 정류장 상세(Show) API 명세
+#### 버스 정류장 상세(Show) API 명세
 
 - http://luffy.dev/api/bus_stops/{id}.json
 - http://luffy.dev/api/bus_stops/NOT-FOUND.json
 
 ***
+
+## 광고(Ad) API 명세
+
+#### 광고 목록(Index) API 명세
+
+- http://luffy.dev/api/ads.json
+
+#### 광고 상세(Show) API 명세
+
+- http://luffy.dev/api/ads/{id}.json
+- http://luffy.dev/api/ads/NOT-FOUND.json
+
+***
+
+
