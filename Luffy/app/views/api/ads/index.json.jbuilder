@@ -9,4 +9,8 @@ json.array! @ads do |ad|
   json.ad_ct2 ad.ad_det.ad_det_ct2
   json.ad_lng ad.ad_det.ad_det_lng
   json.ad_lat ad.ad_det.ad_det_lat
+  json.ad_imgs ad.imgs do |img|
+    json.img_nm_server img.img_nm_server
+    json.img_dn_path img.img_dn_path
+  end
 end

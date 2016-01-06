@@ -10,7 +10,6 @@ Bus.create(
   bus_nm: '37번',
   bus_dow_id: 1
 )
-
 Bus.create(
   bus_id: 'B2',
   bus_nm: '31번',
@@ -21,7 +20,6 @@ BusDow.create(
   bus_dow_nm: '월',
   dow_cd_id: 1
 )
-
 BusDow.create(
   bus_dow_nm: '화',
   dow_cd_id: 2
@@ -56,6 +54,7 @@ Ad.create(
   ad_end_dt: '20150115',
   bus_stop_id: 1
 )
+
 AdDet.create(
   ad_id: 1,
   ad_det_lng: '126.2111605',
@@ -69,4 +68,21 @@ AdDet.create(
   ad_det_lat: '33.503211',
   ad_det_ct1: 'comment1',
   ad_det_ct2: 'comment2'
+)
+
+Img.create(
+  img_nm_user: 'woowa.png',
+  img_nm_server: '20160108woowa.png',
+  img_size: '1024',
+  img_up_path: 'http://www.woowahan.com/',
+  img_dn_path: 'http://www.woowahan.com/',
+  ad_id: 1
+)
+Img.create(
+  img_nm_user: 'baemin.png',
+  img_nm_server: '20160108baemin.png',
+  img_size: '512',
+  img_up_path: 'http://www.woowahan.com/',
+  img_dn_path: 'http://www.woowahan.com/',
+  ad_id: 1
 )

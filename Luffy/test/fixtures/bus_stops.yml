@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  bus_stop_id: B1
-  bus_stop_nm: 이호2동
-  bus_stop_addr: 제주시 이호이동 1380
-  bus_stop_lat: 126.4569673
-  bus_stop_lng: 33.4908272
+  bus_stop_id: MyText
+  bus_stop_nm: MyText
+  bus_stop_addr: MyText
+  bus_stop_lat: MyText
+  bus_stop_lng: MyText
 
 two:
-  bus_stop_id: B2
+  bus_stop_id: MyText
   bus_stop_nm: MyText
   bus_stop_addr: MyText
   bus_stop_lat: MyText

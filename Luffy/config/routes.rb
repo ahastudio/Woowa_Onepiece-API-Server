@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :buses, only: [:index, :show]
     resources :bus_stops, only: [:index, :show]
     resources :ads, only: [:index, :show]
+    resources :imgs, only: [:index, :show]
   end
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'

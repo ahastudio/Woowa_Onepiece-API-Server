@@ -6,7 +6,7 @@ one:
   img_size: MyString
   img_up_path: MyText
   img_dn_path: MyText
-  ad: 
+  ad: one
 
 two:
   img_nm_user: MyText
@@ -14,4 +14,4 @@ two:
   img_size: MyString
   img_up_path: MyText
   img_dn_path: MyText
-  ad: 
+  ad: two

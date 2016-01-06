@@ -10,4 +10,8 @@ json.bus_stop_ads @bus_stop.ads do |ad|
   json.ad_title ad.ad_title
   json.ad_start_dt ad.ad_start_dt
   json.ad_end_dt ad.ad_end_dt
+  json.ad_imgs ad.imgs do |img|
+    json.img_nm_server img.img_nm_server
+    json.img_dn_path img.img_dn_path
+  end
 end
