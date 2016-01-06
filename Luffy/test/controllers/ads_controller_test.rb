@@ -20,7 +20,6 @@ class AdsControllerTest < ActionDispatch::IntegrationTest
       post ads_url, params: {
         ad: {
           ad_cd_id: @ad.ad_cd_id,
-          ad_det_id: @ad.ad_det_id,
           ad_end_dt: @ad.ad_end_dt,
           ad_start_dt: @ad.ad_start_dt,
           ad_title: @ad.ad_title,
@@ -46,7 +45,6 @@ class AdsControllerTest < ActionDispatch::IntegrationTest
     patch ad_url(@ad), params: {
       ad: {
         ad_cd_id: @ad.ad_cd_id,
-        ad_det_id: @ad.ad_det_id,
         ad_end_dt: @ad.ad_end_dt,
         ad_start_dt: @ad.ad_start_dt,
         ad_title: @ad.ad_title,

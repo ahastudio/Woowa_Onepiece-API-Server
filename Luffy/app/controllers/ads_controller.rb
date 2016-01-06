@@ -45,7 +45,7 @@ class AdsController < ApplicationController
   def ad_params
     params.require(:ad).permit(
       :ad_cd_id, :ad_title, :ad_start_dt,
-      :ad_end_dt, :ad_det_id, :bus_stop_id
+      :ad_end_dt, :bus_stop_id
     )
   end
 end

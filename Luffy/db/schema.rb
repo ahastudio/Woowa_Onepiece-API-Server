@@ -11,14 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160106100248) do
+ActiveRecord::Schema.define(version: 20160106131335) do
+
+  create_table "ad_dets", force: :cascade do |t|
+    t.text     "ad_det_lng"
+    t.text     "ad_det_lat"
+    t.text     "ad_det_ct1"
+    t.text     "ad_det_ct2"
+    t.integer  "ad_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ad_id"], name: "index_ad_dets_on_ad_id"
+  end
 
   create_table "ads", force: :cascade do |t|
     t.integer  "ad_cd_id"
     t.text     "ad_title"
     t.date     "ad_start_dt"
     t.date     "ad_end_dt"
-    t.integer  "ad_det_id"
     t.integer  "bus_stop_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

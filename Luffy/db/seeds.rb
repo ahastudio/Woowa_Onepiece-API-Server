@@ -47,14 +47,26 @@ Ad.create(
   ad_title: 'BFC 할인쿠폰',
   ad_start_dt: '20150101',
   ad_end_dt: '20150110',
-  bus_stop_id: 1,
-  ad_det_id: 1
+  bus_stop_id: 1
 )
 Ad.create(
   ad_cd_id: 3,
   ad_title: '13형 맥프로 증정',
   ad_start_dt: '20150110',
   ad_end_dt: '20150115',
-  bus_stop_id: 1,
-  ad_det_id: 2
+  bus_stop_id: 1
+)
+AdDet.create(
+  ad_id: 1,
+  ad_det_lng: '126.2111605',
+  ad_det_lat: '33.4468617',
+  ad_det_ct1: 'comment1',
+  ad_det_ct2: 'comment2'
+)
+AdDet.create(
+  ad_id: 2,
+  ad_det_lng: '126.5140419',
+  ad_det_lat: '33.503211',
+  ad_det_ct1: 'comment1',
+  ad_det_ct2: 'comment2'
 )

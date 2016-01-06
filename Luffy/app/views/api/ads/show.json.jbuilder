@@ -4,4 +4,7 @@ json.ad_title @ad.ad_title
 json.ad_start_dt @ad.ad_start_dt
 json.ad_end_dt @ad.ad_end_dt
 json.bus_stop_id @ad.bus_stop_id
-json.ad_det_id @ad.ad_det_id
+json.ad_ct1 @ad.ad_det.ad_det_ct1
+json.ad_ct2 @ad.ad_det.ad_det_ct2
+json.ad_lng @ad.ad_det.ad_det_lng
+json.ad_lat @ad.ad_det.ad_det_lat
