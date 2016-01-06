@@ -17,8 +17,13 @@ class BusesControllerTest < ActionDispatch::IntegrationTest
 
   test 'should create bus' do
     assert_difference('Bus.count') do
-      post buses_url, params:
-        { bus: { bus_id: @bus.bus_id, bus_nm: @bus.bus_nm } }
+      post buses_url, params: {
+        bus: {
+          bus_id: @bus.bus_id,
+          bus_nm: @bus.bus_nm,
+          bus_dow_id: @bus.bus_dow_id
+        }
+      }
     end
 
     assert_redirected_to bus_path(Bus.last)
@@ -35,8 +40,13 @@ class BusesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should update bus' do
-    patch bus_url(@bus), params:
-      { bus: { bus_id: @bus.bus_id, bus_nm: @bus.bus_nm } }
+    patch bus_url(@bus), params: {
+      bus: {
+        bus_id: @bus.bus_id,
+        bus_nm: @bus.bus_nm,
+        bus_dow_id: @bus.bus_dow_id
+      }
+    }
     assert_redirected_to bus_path(@bus)
   end
 

@@ -11,13 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160105155458) do
+ActiveRecord::Schema.define(version: 20160106010701) do
+
+  create_table "bus_dows", force: :cascade do |t|
+    t.text     "bus_dow_nm"
+    t.integer  "dow_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "buses", force: :cascade do |t|
     t.string   "bus_id"
     t.text     "bus_nm"
+    t.integer  "bus_dow_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["bus_dow_id"], name: "index_buses_on_bus_dow_id"
   end
 
 end

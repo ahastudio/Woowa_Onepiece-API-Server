@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bus dow nm:</strong>
+  <%= @bus_dow.bus_dow_nm %>
+</p>
+
+<p>
+  <strong>Dow:</strong>
+  <%= @bus_dow.dow_id %>
+</p>
+
+<p>
+  <strong>Bus:</strong>
+  <%= @bus_dow.bus %>
+</p>
+
+<%= link_to 'Edit', edit_bus_dow_path(@bus_dow) %> |
+<%= link_to 'Back', bus_dows_path %>
