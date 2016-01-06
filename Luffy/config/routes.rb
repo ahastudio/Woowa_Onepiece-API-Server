@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ads
   resources :bus_stops
   resources :bus_dows
   resources :buses

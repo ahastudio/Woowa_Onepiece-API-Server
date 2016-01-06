@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160106070939) do
+ActiveRecord::Schema.define(version: 20160106100248) do
+
+  create_table "ads", force: :cascade do |t|
+    t.integer  "ad_cd_id"
+    t.text     "ad_title"
+    t.date     "ad_start_dt"
+    t.date     "ad_end_dt"
+    t.string   "ad_det_id"
+    t.integer  "bus_stop_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["bus_stop_id"], name: "index_ads_on_bus_stop_id"
+  end
 
   create_table "bus_dows", force: :cascade do |t|
     t.text     "bus_dow_nm"
