@@ -5,11 +5,11 @@ one:
   ad_det_lat: MyText
   ad_det_ct1: MyText
   ad_det_ct2: MyText
-  ad: 
+  ad: one
 
 two:
   ad_det_lng: MyText
   ad_det_lat: MyText
   ad_det_ct1: MyText
   ad_det_ct2: MyText
-  ad: 
+  ad: two

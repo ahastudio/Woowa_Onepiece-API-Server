@@ -7,6 +7,15 @@
 ![해적왕](https://attachment.namu.wiki/%EB%AA%BD%ED%82%A4%20D.%20%EB%A3%A8%ED%94%BC__Example4.jpg "루피")
 
 ***
+## 코드 품질 분석
+
+#### Travis CI
+- https://travis-ci.org/Yongdae-Kim/Woowa_Onepiece-API-Server
+
+#### Codacy
+- https://www.codacy.com/app/yongdae91/Woowa_Onepiece-API-Server/dashboard
+
+***
 
 ## 버스(Bus) API 명세
 

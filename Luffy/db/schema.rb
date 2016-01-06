@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160106131335) do
+ActiveRecord::Schema.define(version: 20160106161138) do
 
   create_table "ad_dets", force: :cascade do |t|
     t.text     "ad_det_lng"
@@ -59,6 +59,18 @@ ActiveRecord::Schema.define(version: 20160106131335) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["bus_dow_id"], name: "index_buses_on_bus_dow_id"
+  end
+
+  create_table "imgs", force: :cascade do |t|
+    t.text     "img_nm_user"
+    t.text     "img_nm_server"
+    t.string   "img_size"
+    t.text     "img_up_path"
+    t.text     "img_dn_path"
+    t.integer  "ad_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["ad_id"], name: "index_imgs_on_ad_id"
   end
 
 end
