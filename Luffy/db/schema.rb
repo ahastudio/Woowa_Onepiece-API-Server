@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20160106070939) do
 
   create_table "bus_dows", force: :cascade do |t|
     t.text     "bus_dow_nm"
-    t.integer  "dow_id"
+    t.integer  "dow_cd_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -191,6 +191,9 @@ GEM
       ruby-progressbar (~> 1.7)
       tins (<= 1.6.0)
     ruby-progressbar (1.7.5)
+    seed_dump (3.2.4)
+      activerecord (>= 4)
+      activesupport (>= 4)
     shellany (0.0.1)
     slop (3.6.0)
     spring (1.6.1)
@@ -236,6 +239,7 @@ DEPENDENCIES
   puma
   rails (>= 5.0.0.beta1, < 5.1)
   responders (~> 2.0)
+  seed_dump
   spring
   sqlite3
   turbolinks

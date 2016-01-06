@@ -20,7 +20,7 @@ class BusDowsControllerTest < ActionDispatch::IntegrationTest
       post bus_dows_url, params: {
         bus_dow: {
           bus_dow_nm: @bus_dow.bus_dow_nm,
-          dow_id: @bus_dow.dow_id
+          dow_cd_id: @bus_dow.dow_cd_id
         }
       }
     end
@@ -42,7 +42,7 @@ class BusDowsControllerTest < ActionDispatch::IntegrationTest
     patch bus_dow_url(@bus_dow), params: {
       bus_dow: {
         bus_dow_nm: @bus_dow.bus_dow_nm,
-        dow_id: @bus_dow.dow_id
+        dow_cd_id: @bus_dow.dow_cd_id
       }
     }
     assert_redirected_to bus_dow_path(@bus_dow)

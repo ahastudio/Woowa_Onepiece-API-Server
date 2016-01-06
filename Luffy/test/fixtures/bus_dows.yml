@@ -2,8 +2,8 @@
 
 one:
   bus_dow_nm: 월
-  dow_id: 1
+  dow_cd_id: 1
 
 two:
   bus_dow_nm: 화
-  dow_id: 1
+  dow_cd_id: 1

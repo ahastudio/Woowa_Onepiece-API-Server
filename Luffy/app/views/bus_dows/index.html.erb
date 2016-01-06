@@ -16,7 +16,7 @@
     <% @bus_dows.each do |bus_dow| %>
       <tr>
         <td><%= bus_dow.bus_dow_nm %></td>
-        <td><%= bus_dow.dow_id %></td>
+        <td><%= bus_dow.dow_cd_id %></td>
         <td><%= bus_dow.bus %></td>
         <td><%= link_to 'Show', bus_dow %></td>
         <td><%= link_to 'Edit', edit_bus_dow_path(bus_dow) %></td>
