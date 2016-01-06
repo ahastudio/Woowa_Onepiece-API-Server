@@ -13,7 +13,7 @@ module Api
       assert_not_includes response.body, '99번'
     end
 
-    test 'GET #show' do
+    test 'GET #show(200)' do
       get api_bus_url(@bus.id), params: { format: :json }
       assert_response :success
       assert_includes response.body, 'B1'

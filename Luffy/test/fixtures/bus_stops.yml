@@ -8,7 +8,7 @@ one:
   bus_stop_lng: 33.4908272
 
 two:
-  bus_stop_id: MyString
+  bus_stop_id: B2
   bus_stop_nm: MyText
   bus_stop_addr: MyText
   bus_stop_lat: MyText

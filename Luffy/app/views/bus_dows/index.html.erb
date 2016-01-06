@@ -5,9 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>Bus dow nm</th>
-      <th>Dow</th>
-      <th>Bus</th>
+      <th>요일 이름</th>
+      <th>요일 코드 아이디</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +16,6 @@
       <tr>
         <td><%= bus_dow.bus_dow_nm %></td>
         <td><%= bus_dow.dow_cd_id %></td>
-        <td><%= bus_dow.bus %></td>
         <td><%= link_to 'Show', bus_dow %></td>
         <td><%= link_to 'Edit', edit_bus_dow_path(bus_dow) %></td>
         <td><%= link_to 'Destroy', bus_dow, method: :delete, data: { confirm: 'Are you sure?' } %></td>

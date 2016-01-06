@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20160106100248) do
     t.text     "ad_title"
     t.date     "ad_start_dt"
     t.date     "ad_end_dt"
-    t.string   "ad_det_id"
+    t.integer  "ad_det_id"
     t.integer  "bus_stop_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

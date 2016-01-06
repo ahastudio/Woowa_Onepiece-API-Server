@@ -10,5 +10,15 @@ module Api
       get api_bus_stops_url, params: { format: :json }
       assert_response :success
     end
+
+    test 'GET #show (200)' do
+      get api_bus_stop_url(@bus_stop.id), params: { format: :json }
+      assert_response :success
+    end
+
+    test 'GET #show (404)' do
+      get api_bus_stop_url('NOT-FOUND'), params: { format: :json }
+      assert_response :not_found
+    end
   end
 end

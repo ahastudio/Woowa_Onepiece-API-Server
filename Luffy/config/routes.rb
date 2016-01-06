@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :buses, only: [:index, :show]
     resources :bus_stops, only: [:index, :show]
+    resources :ads, only: [:index, :show]
   end
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
